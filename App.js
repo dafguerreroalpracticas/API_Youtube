@@ -1,0 +1,20 @@
+import React, { Component } from 'react';
+
+import {StyleSheet,View,StatusBar} from 'react-native';
+
+import Routes from './Route';
+
+export default class App extends Component<{}> {
+
+  render() {
+    return (
+      <View style={{flex: 1}}>
+        <StatusBar
+          backgroundColor="#fff"
+          barStyle="dark-content"
+        />
+        <Routes/>
+      </View>
+    );
+  }
+}
